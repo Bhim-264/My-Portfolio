@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Personal Portfolio</title>
+<style>
+  /* Reset and base styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #c1e6de;
+    color: #333;
+    line-height: 1.6;
+  }
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Container */
+  .container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  /* Header - Introduction */
+  header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  header h1 {
+    font-size: 3rem;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  header p.tagline {
+    font-size: 1.25rem;
+    color: #555;
+  }
+  header img.profile-photo {
+    margin-top: 30px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #007bff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  /* Section headings */
+  section {
+    margin-bottom: 50px;
+  }
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 4px;
+    color: #007bff;
+  }
+
+  /* About */
+  #about p {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* Resume download */
+  #resume {
+    text-align: center;
+  }
+  #resume a.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 14px 32px;
+    font-size: 1.1rem;
+    border-radius: 35px;
+    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  #resume a.button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 20px rgba(0, 86, 179, 0.6);
+  }
+
+  /* Experience */
+  #experience .job {
+    margin-bottom: 25px;
+  }
+  #experience .job h3 {
+    font-size: 1.3rem;
+    color: #222;
+  }
+  #experience .job .company {
+    font-weight: 600;
+    color: #555;
+  }
+  #experience .job .duration {
+    font-style: italic;
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  /* Skills */
+  #skills .skill {
+    margin-bottom: 15px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #skills .skill-name {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+  }
+  #skills .progress-bar {
+    background-color: #d6d6d6;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 18px;
+  }
+  #skills .progress-bar > div {
+    height: 100%;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border-radius: 20px 0 0 20px;
+  }
+
+  /* Projects */
+  #projects .project {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    margin-bottom: 25px;
+    transition: box-shadow 0.3s ease;
+  }
+  #projects .project:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  }
+  #projects .project h3 {
+    margin-bottom: 8px;
+    color: #007bff;
+  }
+  #projects .project p {
+    color: #444;
+    line-height: 1.4;
+  }
+  #projects .project a {
+    font-weight: 600;
+    color: #0056b3;
+  }
+
+  /* Contact */
+  #contact {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  #contact p {
+    margin: 6px 0;
+  }
+  #contact a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #007bff;
+    vertical-align: middle;
+    transition: color 0.3s ease;
+  }
+  #contact a:hover {
+    color: #0056b3;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+    header img.profile-photo {
+      width: 110px;
+      height: 110px;
+    }
+    #projects .project {
+      padding: 16px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bhim Debnath</h1>
+      <p class="tagline">Web Developer & Designer</p>
+      <img src="img.html.jpg" alt="Bhim Debnath Photo" class="profile-photo" />
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! i'm Bhim Debnath  a recent BSc Computer Science graduate from Remuna Degree College, Balasore, I'm passionate about leveraging technology to drive innovation and solve real-world problems, With a strong foundation in computer science, I'm excited to explore various aspects of technology and contribute to the ever-evolving tech landscape.</p>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <a href="https://pdf.ac/4ZN8vP" download="Bhim Debnath-Resume.pdf" class="button" aria-label="Download Resume">Download Resume</a>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      
+        <p>As i'm a Fresher I don't have experience, but i've gained hands-on experience in various programming languages and technologies through academic carrier.</p>
+        <p>Completed multiple projects that demonstrate my skills in Web Development</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill">
+        <div class="skill-name">HTML5 & CSS3</div>
+        <div class="progress-bar"><div style="width: 95%;"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">JavaScript (ES6+)</div>
+        <div class="progress-bar"><div style="width: 90%;"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">React & Redux</div>
+        <div class="progress-bar"><div style="width: 85%;"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">UI/UX Design</div>
+        <div class="progress-bar"><div style="width: 70%;"></div></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A modern responsive portfolio built to showcase my projects and skills, optimized for speed and accessibility.</p>
+        
+      </div>
+      <div class="project">
+        <h3>Railway Reservation System</h3>
+        <p>A java based platform for saving passanger's time and book tickets with out facing problem and search for trains time table.</p>
+        
+      </div>
+      <div class="project">
+        <h3>Invoice Generator</h3>
+           <p>A Java Script project that helps various  stores to generate digital invoice and print that. </p>
+      
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: bhimdebnath70@gmail.com</p>
+      <p>Phone: +91 7683806906</p>
+      <p>
+        <a href="https://www.linkedin.com/in/bhim-debnath-347704253/" target="_blank" rel="noopener" aria-label="LinkedIn">&#x1F464;</a>
+        <a href="https://github.com/Bhim-264" target="_blank" rel="noopener" aria-label="GitHub">&#x1F4BB;</a>
+        <a href="https://www.instagram.com/_sipu__45/" target="_blank" rel="noopener" aria-label class="Instagram">&#x1F426;</a>
+      </p>
+    </section>
+  </div>
+</body>
+</html>
